@@ -1,0 +1,39 @@
+﻿@model IEnumerable<SelfLearning.Models.DepartmentTicket>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.RegisterTicket.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Approved)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.RegisterTicket.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Approved)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.DeparmentTrickId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.DeparmentTrickId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.DeparmentTrickId })
+        </td>
+    </tr>
+}
+
+</table>

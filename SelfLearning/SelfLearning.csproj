@@ -167,15 +167,44 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DepartmentTicketsController.cs" />
+    <Compile Include="Controllers\DepartmentTracksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RegisterTicketsController.cs" />
+    <Compile Include="Controllers\TicketsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Migrations\201811141738339_student_subject.cs" />
+    <Compile Include="Migrations\201811141738339_student_subject.Designer.cs">
+      <DependentUpon>201811141738339_student_subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811151559139_RegistorTicket_Ticket.cs" />
+    <Compile Include="Migrations\201811151559139_RegistorTicket_Ticket.Designer.cs">
+      <DependentUpon>201811151559139_RegistorTicket_Ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811151605538_RegistorTicket_Ticket1.cs" />
+    <Compile Include="Migrations\201811151605538_RegistorTicket_Ticket1.Designer.cs">
+      <DependentUpon>201811151605538_RegistorTicket_Ticket1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811151608533_RegistorTicket_Ticket2.cs" />
+    <Compile Include="Migrations\201811151608533_RegistorTicket_Ticket2.Designer.cs">
+      <DependentUpon>201811151608533_RegistorTicket_Ticket2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811151721401_DepartmentTicketTrack.cs" />
+    <Compile Include="Migrations\201811151721401_DepartmentTicketTrack.Designer.cs">
+      <DependentUpon>201811151721401_DepartmentTicketTrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\DepartmentTicket.cs" />
+    <Compile Include="Models\DepartmentTrack.cs" />
+    <Compile Include="Models\IContext.cs" />
+    <Compile Include="Models\IDbSetExtensions.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\RegisterTicket.cs" />
+    <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Subject.cs" />
+    <Compile Include="Models\Ticket.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -234,6 +263,36 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Subjects\Create.cshtml" />
+    <Content Include="Views\Subjects\Delete.cshtml" />
+    <Content Include="Views\Subjects\Details.cshtml" />
+    <Content Include="Views\Subjects\Edit.cshtml" />
+    <Content Include="Views\Subjects\Index.cshtml" />
+    <Content Include="Views\Students\Create.cshtml" />
+    <Content Include="Views\Students\Delete.cshtml" />
+    <Content Include="Views\Students\Details.cshtml" />
+    <Content Include="Views\Students\Edit.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
+    <Content Include="Views\Tickets\Create.cshtml" />
+    <Content Include="Views\Tickets\Delete.cshtml" />
+    <Content Include="Views\Tickets\Details.cshtml" />
+    <Content Include="Views\Tickets\Edit.cshtml" />
+    <Content Include="Views\Tickets\Index.cshtml" />
+    <Content Include="Views\RegisterTickets\Create.cshtml" />
+    <Content Include="Views\RegisterTickets\Delete.cshtml" />
+    <Content Include="Views\RegisterTickets\Details.cshtml" />
+    <Content Include="Views\RegisterTickets\Edit.cshtml" />
+    <Content Include="Views\RegisterTickets\Index.cshtml" />
+    <Content Include="Views\DepartmentTracks\Create.cshtml" />
+    <Content Include="Views\DepartmentTracks\Delete.cshtml" />
+    <Content Include="Views\DepartmentTracks\Details.cshtml" />
+    <Content Include="Views\DepartmentTracks\Edit.cshtml" />
+    <Content Include="Views\DepartmentTracks\Index.cshtml" />
+    <Content Include="Views\DepartmentTickets\Create.cshtml" />
+    <Content Include="Views\DepartmentTickets\Delete.cshtml" />
+    <Content Include="Views\DepartmentTickets\Details.cshtml" />
+    <Content Include="Views\DepartmentTickets\Edit.cshtml" />
+    <Content Include="Views\DepartmentTickets\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -245,6 +304,23 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201811141738339_student_subject.resx">
+      <DependentUpon>201811141738339_student_subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811151559139_RegistorTicket_Ticket.resx">
+      <DependentUpon>201811151559139_RegistorTicket_Ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811151605538_RegistorTicket_Ticket1.resx">
+      <DependentUpon>201811151605538_RegistorTicket_Ticket1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811151608533_RegistorTicket_Ticket2.resx">
+      <DependentUpon>201811151608533_RegistorTicket_Ticket2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811151721401_DepartmentTicketTrack.resx">
+      <DependentUpon>201811151721401_DepartmentTicketTrack.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

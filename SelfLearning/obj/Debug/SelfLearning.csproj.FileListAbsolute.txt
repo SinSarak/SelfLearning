@@ -64,6 +64,12 @@ R:\C#\Web-WinForm\SelfLearning\SelfLearning\bin\Microsoft.Owin.Security.OAuth.xm
 R:\C#\Web-WinForm\SelfLearning\SelfLearning\bin\Microsoft.Owin.Security.Google.xml
 R:\C#\Web-WinForm\SelfLearning\SelfLearning\bin\Microsoft.Owin.Security.Twitter.xml
 R:\C#\Web-WinForm\SelfLearning\SelfLearning\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-R:\C#\Web-WinForm\SelfLearning\SelfLearning\obj\Debug\SelfLearning.csprojResolveAssemblyReference.cache
 R:\C#\Web-WinForm\SelfLearning\SelfLearning\obj\Debug\SelfLearning.dll
 R:\C#\Web-WinForm\SelfLearning\SelfLearning\obj\Debug\SelfLearning.pdb
+R:\C#\Web-WinForm\SelfLearning\SelfLearning\obj\Debug\SelfLearning.Migrations.student_subject.resources
+R:\C#\Web-WinForm\SelfLearning\SelfLearning\obj\Debug\SelfLearning.csproj.GenerateResource.Cache
+R:\C#\Web-WinForm\SelfLearning\SelfLearning\obj\Debug\SelfLearning.Migrations.RegistorTicket_Ticket.resources
+R:\C#\Web-WinForm\SelfLearning\SelfLearning\obj\Debug\SelfLearning.Migrations.RegistorTicket_Ticket1.resources
+R:\C#\Web-WinForm\SelfLearning\SelfLearning\obj\Debug\SelfLearning.Migrations.RegistorTicket_Ticket2.resources
+R:\C#\Web-WinForm\SelfLearning\SelfLearning\obj\Debug\SelfLearning.csprojResolveAssemblyReference.cache
+R:\C#\Web-WinForm\SelfLearning\SelfLearning\obj\Debug\SelfLearning.Migrations.DepartmentTicketTrack.resources
